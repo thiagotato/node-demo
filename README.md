@@ -20,7 +20,7 @@ Para gerir a criação desse ambientes foi criado um "Makefile" com alguns coman
   - jq
     - apt-get install jq
   - S3
-    - Copiar arquivos da pasta cformation para um bucket no s3, pode ser criado uma nova pasta dentro do bucket, porém as pastas infrastructure e services devem ser mantidas. Em seguida alterar o "Parameters" "S3 bucket" no arquivo master.yaml. O valor default está como s3url.
+    - Copiar arquivos da pasta cformation para um bucket no s3, pode ser criado uma nova pasta dentro do bucket, porém as pastas infrastructure e services devem ser mantidas. Em seguida alterar o "Parameters" "S3 bucket" no arquivo master.yaml para a URL do bucket que será utilizado. O valor default está como s3url.
 
 ## Makefile
 
