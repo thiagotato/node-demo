@@ -19,6 +19,8 @@ Para gerir a criação desse ambientes foi criado um "Makefile" com alguns coman
     - https://docs.aws.amazon.com/pt_br/cli/latest/userguide/cli-chap-install.html
   - jq
     - apt-get install jq
+  - make
+    - apt-get install build-essential
   - S3
     - Copiar arquivos da pasta cformation para um bucket no s3, pode ser criado uma nova pasta dentro do bucket, porém as pastas infrastructure e services devem ser mantidas. Em seguida alterar o "Parameters" "S3 bucket" no arquivo master.yaml para a URL do bucket que será utilizado. O valor default está como s3url.
 
@@ -58,3 +60,5 @@ Comandos:
     - make prod-test
   - Para realizar a deleção do ambiente de Prod, executar o comando:
     - make prod-clean  
+
+OBS: Todo o processo foi realizado e testado em um SO Debian. 
