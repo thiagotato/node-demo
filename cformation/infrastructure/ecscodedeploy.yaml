@@ -1,0 +1,34 @@
+Description: >
+  This is an example of a long running ECS service that serves a JSON API of products.
+
+Parameters:
+  Listener:
+    Description: The Application Load Balancer listener to register with
+    Type: String
+
+Resources:
+  CodeDeployApplication:
+    Type: AWS::CodeDeploy::Application
+    Properties:
+      ApplicationName: ecs-test
+      ComputePlatform: ECS
+      
+  CodeDeploymentGroup:
+    Type: AWS::CodeDeploy::DeploymentGroup
+    Properties:
+      ApplicationName: !Ref: "CodeDeployApplication"
+      AutoRollbackConfiguration:
+        Enabled: 'true'
+        Events:
+          - DEPLOYMENT_FAILURE
+      AutoScalingGroups:
+       - String
+      Deployment:
+       Deployment
+      DeploymentConfigName: String
+      DeploymentGroupName: String
+      DeploymentStyle:
+       DeploymentStyle
+      LoadBalancerInfo:
+       LoadBalancerInfo
+      ServiceRoleArn: arn:aws:iam::830062373251:role/role-ecs-code-delpoy

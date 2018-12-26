@@ -1,0 +1,4 @@
+CREATE USER 'notes_api'@'localhost' IDENTIFIED BY 'notes-api' PASSWORD EXPIRE NEVER;
+GRANT ALL PRIVILEGES ON *.* TO 'notes_api'@'localhost' WITH GRANT OPTION;
+CREATE USER 'notes_api'@'%' IDENTIFIED BY 'notes-api' PASSWORD EXPIRE NEVER;
+GRANT ALL PRIVILEGES ON *.* TO 'notes_api'@'%' WITH GRANT OPTION;
