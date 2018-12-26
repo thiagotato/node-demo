@@ -61,4 +61,4 @@ Comandos:
   - Para realizar a deleção do ambiente de Prod, executar o comando:
     - make prod-clean  
 
-OBS: Todo o processo foi realizado e testado em um SO Debian. 
+#### OBS: Todo o processo foi realizado e testado em um SO Debian. 
