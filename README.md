@@ -41,3 +41,20 @@ Comandos:
     - Realiza uma chamada para o endpoint local com o comando 'curl' para ler as notas, criar ou deletar.
   - dev-clean
     - Executa a deleção do ambiente de dev
+    
+## Execução
+  ### Dev
+  Para provisionar o ambiente de Dev, executar o comando:
+    - make dev
+  Para realizar os teste no ambiente de Dev, executar o comando:
+    - make dev-test
+  Para realizar a deleção do ambiente de Dev, executar o comando:
+    - make dev-clean    
+
+  ### Prod
+  Para provisionar o ambiente de Prod, executar o comando:
+    - make prod
+  Para realizar os teste no ambiente de Prod, executar o comando:
+    - make prod-test
+  Para realizar a deleção do ambiente de Prod, executar o comando:
+    - make prod-clean  
