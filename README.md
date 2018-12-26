@@ -17,9 +17,9 @@ Para gerir a criação desse ambientes foi criado um "Makefile" com alguns coman
     - https://docs.docker.com/compose/install/
   - AWS cli
     - https://docs.aws.amazon.com/pt_br/cli/latest/userguide/cli-chap-install.html
-  - jq 
+  - jq
     - apt-get install jq
-   - S3
+  - S3
     - Copiar arquivos da pasta cformation para um bucket no s3, pode ser criado uma nova pasta dentro do bucket, porém as pastas infrastructure e services devem ser mantidas. Em seguida alterar o "Parameters" "S3 bucket" no arquivo master.yaml. O valor default está como s3url.
 
 ## Makefile
